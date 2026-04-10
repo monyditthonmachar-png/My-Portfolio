@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myportfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <!--Navigation-->
+    <nav class="navbar">
+        <a href="#home" class="logo">Monydit</a>
+        <ul class="nav-links" id="sidemenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Portfolio</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
+
+    <!--Hero Section-->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Full Stack Developer</h1>
+            <p>Building digital experiences that merge creativity with technology</p>
+            <p class="highliht">Specializing in modern web development and cyber systems</p>
+            <a href="#contacts" class="cta-button">Let's Connect</a>
+        </div>
+        <div class="hero-image">
+            <img src="Images/Monydit.png" alt="Profile" class="profile-img">
+        </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="row">
+                    <div class="about-column-1">
+                        <img src="Images/About.jpg" >
+                    </div>
+                    <div class="about-column-2">
+                            <h1 class="subtitle-text">About Me</h1>
+                            <p>
+                            I am a passionate Computer Science student with a strong interest in software development,
+                            algorithms, and modern web technologies. I enjoy solving real-world problems through code
+                            and continuously improving my skills through hands-on projects.
+                            </p>
+
+                            <p>
+                            My goal is to become a professional software engineer and build innovative solutions
+                            that create real impact in the digital world.
+                            </p>
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>UI?UX</span><br>Designing Web/App interface</li>
+                                    <li><span>Web Development</span><br>Website Development</li>
+                                    <li><span>App Development</span><br>Building Android/iOS apps</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>2026 - current</span><br>UI/UX Training</li>
+                                    <li><span>2025 - 2026</span><br>Team Leader at StarApp LLC</li>
+                                    <li><span>2024 - 2025</span><br>UI/UX Executive</li>
+                                    <li><span>2021 - 2022</span><br>Completed internship in eCommerce</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2023 - current</span><br>BSC at Starford International University</li>
+                                    <li><span>2020</span><br>CSE at New Testament Christian Secondary School</li>
+                                    <li><span>2016</span><br>PLE at Eden Nursery & Primary School</li>
+                                </ul>
+                            </div>
+                    </div>
+     
+            </div>
+        </section>
+
+
+        <!--Skills section-->
+        <section id="skills" class="skills">
+            <h2>Technical Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Frontend Development</h3>
+                    <p>React,App Development HTML, CSS, Javascript</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa fa-server"></i>
+                    <h3>Backend Development</h3>
+                    <p>Node.App Developmentython, MongoDB, PostgreSQL</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>UI/UX Development</h3>
+                    <p>Figma, Adobe XD, Prototyping, User Testing</p>
+                </div>
+            </div> 
+
+            <!--services-->
+            <section id="services" class="services">
+            <h2>My Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Design</h3>
+                    <p>React,App Development HTML, CSS, Javascript</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="service-card">
+                    <i class="fa fa-crop-alt"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Node.App Developmentython, MongoDB, PostgreSQL</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="service-card">
+                  <i class="fa-brands fa-app-store"></i>
+                  <i class="fa-brands fa-android"></i>
+                    <h3>App Design</h3>
+                    <p>Figma, Adobe XD, Prototyping, User Testing</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div> 
+        
+
+            <!-- Projects Section -->
+            <section id="projects" class="projects">
+                <h2>Projects</h2>
+
+                <div class="projects-grid">
+
+                    <div class="project-card">
+                        <img src="Images/project-1.jpeg">
+                        <h3>Student Management System</h3>
+                        <p>
+                            A system built using Java and MySQL to manage student records efficiently,
+                            including adding, updating, and searching data.
+                        </p>
+                        <p><strong>Tech:</strong> Java, MySQL</p>
+                        <a href="#">GitHub Link</a>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="Images/project-2.jpeg">
+                        <h3>Portfolio Website</h3>
+                        <p>
+                            A responsive personal website showcasing my skills, projects, and achievements.
+                        </p>
+                        <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+                        <a href="#">Live Demo</a>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="Images/project-3.png">
+                        <h3>Algorithm Visualizer</h3>
+                        <p>
+                            A tool that visually demonstrates sorting and searching algorithms step-by-step.
+                        </p>
+                        <p><strong>Tech:</strong> JavaScript</p>
+                        <a href="#">GitHub Link</a>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contacts" class="contacts">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i>contact@example.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i>(+211)-0924 500 802</p>
+                        <div class="social-icons">
+                            <a href=""><i class="fab fa-facebook"></i></a>
+                            <a href=""><i class="fab fa-whatsapp"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="fab fa-twitter-square"></i></a>
+                            <a href=""><i class="fab fa-linkedin"></i></a>
+                            <a href=""><i class="fab fa-github"></i></a>
+                        </div>
+                        <a href="" class="cta-button btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="cta-button btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            
+            <!--Footer-->
+            <footer>
+                <p>Copyright &copy; 2026 Monydit. All rights reserved.</p>
+                
+            </footer>
+            <script src="script.js"></script>
+
+        </section>
+
+
+
+
+
+</body>
+</html>
