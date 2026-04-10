@@ -142,7 +142,7 @@ body{
 
 /* About */
 .about {
-     padding: 8rem;
+     padding: 6rem;
     border-radius: 15px;
     background: rgb(255,255,255,0.05);
     transition: all 0.3s ease;
@@ -349,8 +349,7 @@ body{
 }
 
 /* Contact*/
-.contacts{
-    padding: 6rem ;
+
 }
 .contact-left {
     flex-basis: 35%;
